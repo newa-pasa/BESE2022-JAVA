@@ -72,8 +72,7 @@ properties and behavior ( method) as well.**
 **Program#**
 Program to read an integer from console and display it
 
-**Modify this program so that you can input two integers and display the
-sum.**
+**Modify this program so that you can input two integers and display the sum.**
 
 
 **Program#**
@@ -85,9 +84,7 @@ Write a program to count the number of instances of a class using class variable
 
 
 **Program#**
-Write a program that reads two numbers from the command line, the number of hours worked by an
-employee and their base pay rate. Add warning messages if the pay rate is less than the minimum wage
-(12.5 an hour ) or if the employee worked more than the number of hours in a week.
+Write a program that reads two numbers from the command line, the number of hours worked by an employee and their base pay rate. Add warning messages if the pay rate is less than the minimum wage (12.5 an hour ) or if the employee worked more than the number of hours in a week.
 
 _Compile: <javac Salary.java>
 Run: <java Salary 30 50>_
