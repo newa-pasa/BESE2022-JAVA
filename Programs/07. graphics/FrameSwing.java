@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 public class FrameSwing {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Swing Frame Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel label = new JLabel("Enter your name:");
         JTextField textField = new JTextField();

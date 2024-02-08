@@ -1,0 +1,9 @@
+module HelloApp
+{
+	interface Hello
+	{
+		string sayHello();
+		long sum(in long a, in long b);
+		oneway void shutdown();
+	};
+};
