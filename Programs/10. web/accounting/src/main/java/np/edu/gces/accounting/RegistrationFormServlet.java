@@ -37,10 +37,12 @@ public class RegistrationFormServlet extends HttpServlet {
         String mobile = request.getParameter("mobile");
 
         Student student = new Student(name, roll, age, sex, mobile);
+        
         // Process the data (you can store it in a database or perform other actions)
 
         // Set the new Student object as an attribute in the request
         request.setAttribute("student", student);
+
 
         // Forward to a confirmation page (you can redirect to another JSP or HTML page)
         request.getRequestDispatcher("/WEB-INF/jsp/RegistrationConfirm.jsp").forward(request, response);
