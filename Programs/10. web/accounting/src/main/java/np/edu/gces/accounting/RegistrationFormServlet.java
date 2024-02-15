@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/register")
 public class RegistrationFormServlet extends HttpServlet {
@@ -37,12 +38,20 @@ public class RegistrationFormServlet extends HttpServlet {
         String mobile = request.getParameter("mobile");
 
         Student student = new Student(name, roll, age, sex, mobile);
-        
+
         // Process the data (you can store it in a database or perform other actions)
 
         // Set the new Student object as an attribute in the request
         request.setAttribute("student", student);
 
+        // Get or create a session
+        HttpSession session = request.getSession(true);
+
+        // Store additional user information in the session
+        session.setAttribute("username", "username");
+        session.setAttribute("role", "user");
+        session.setAttribute("role1", "user1");
+        session.setAttribute("role2", "user2");
 
         // Forward to a confirmation page (you can redirect to another JSP or HTML page)
         request.getRequestDispatcher("/WEB-INF/jsp/RegistrationConfirm.jsp").forward(request, response);

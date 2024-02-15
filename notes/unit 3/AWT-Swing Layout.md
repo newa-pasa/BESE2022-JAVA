@@ -1,4 +1,4 @@
-In Java Swing, layouts are used to arrange and manage the placement of components within a container. Different layouts provide different ways of organizing and displaying components, ensuring proper alignment and resizing as the user interacts with the application. Here are some commonly used Swing layouts:
+In Java Swing, layouts are used to arrange and manage the placement of components within a container. Different layouts provide different ways of organizing and displaying components, ensuring proper alignment and resizing as the user interacts with the application. Swing doesn't has its own layout manager instead it uses AWT layout manager. Here are some commonly used AWT layouts:
 
 1. **FlowLayout:**
     - Components are arranged in a left-to-right flow, and new components are added to the right.

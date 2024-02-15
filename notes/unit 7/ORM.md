@@ -32,3 +32,11 @@ Popular ORM frameworks in various programming languages include:
 - Python: SQLAlchemy, Django ORM
 - .NET: Entity Framework (EF), NHibernate
 
+### Pros- Object-Relational Data Model
+
+The following are some of the benefits of the Object-Relational model:
+1. **Inheritance:** Users of this data model can inherit objects, tables, and other data to expand their capability. Inherited objects have new properties in addition to those that were inherited.
+2. **Complex Data Types:** Existing data types can be used to create complex data types. This is useful in the Object-Relational data model because complex data types allow for more effective data manipulation.
+3. **Extensibility:** In the Object-Relational data model, the system’s capability can be expanded. This can be accomplished through the use of complicated data types and advanced Object-Oriented concepts such as inheritance.
+### Cons- Object-Relational Data Model
+1. Because it combines the features of both the Object-Oriented data model and the Relational data model, this data model can be rather complicated and hard to handle at times.

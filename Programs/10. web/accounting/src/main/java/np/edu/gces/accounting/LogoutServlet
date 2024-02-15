@@ -1,0 +1,32 @@
+package np.edu.gces.accounting;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.IOException;
+
+
+// session[1][username] = dilip
+// session[2][username] = ram
+// session[3][username] = hari
+// session[4][username] = shyan
+
+
+@WebServlet("/logout")
+public class LogoutServlet extends HttpServlet {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Get the current session or create a new one if it doesn't exist
+        HttpSession session = request.getSession(false);
+
+        if (session != null) {
+            // Invalidate (destroy) the session
+            session.invalidate();
+
+            // Redirect to a logout success page or any other destination
+            response.sendRedirect("register");
+        } else {
+            // If there is no active session, redirect to a login page or any other destination
+            response.sendRedirect("login");
+        }
+    }
+}
