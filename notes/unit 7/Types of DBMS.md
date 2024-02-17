@@ -57,7 +57,7 @@ The matrix helps in understanding which types of databases are suitable for diff
 ### Example of OODBMS
 An Object-Oriented Database Management System (OODBMS) is a type of database management system that is designed to store, retrieve, and manage objects, as opposed to traditional relational databases that store and manage data in tables. Here's an example of an Object-Oriented Database Management System:
 
-### ObjectDB:
+### ObjectDB: 
 
 [ObjectDB](https://www.objectdb.com/) is an example of an Object-Oriented Database Management System. It is a high-performance, scalable, and lightweight OODBMS that is fully integrated with Java. ObjectDB supports the Java Persistence API (JPA), making it easy to work with for developers familiar with Java.
 
@@ -267,4 +267,4 @@ In this MySQL example:
 - Data is inserted into these tables, demonstrating the use of simple data types.
 - A query retrieves information about products and their categories using a JOIN operation.
 
-MySQL, as a pure RDBMS, follows the relational model principles, using tables, relationships, and standard SQL for data management. This example demonstrates a simple schema with two related tables, showcasing the core principles of a pure RDBMS.
+MySQL, as a pure RDBMS(with Enum and Set being exception), follows the relational model principles, using tables, relationships, and standard SQL for data management. This example demonstrates a simple schema with two related tables, showcasing the core principles of a pure RDBMS.

@@ -1,8 +1,12 @@
 package np.edu.gces.accounting;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
 import java.io.IOException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 
 // session[1][username] = dilip
@@ -23,7 +27,7 @@ public class LogoutServlet extends HttpServlet {
             session.invalidate();
 
             // Redirect to a logout success page or any other destination
-            response.sendRedirect("register");
+            response.sendRedirect("/");
         } else {
             // If there is no active session, redirect to a login page or any other destination
             response.sendRedirect("login");
