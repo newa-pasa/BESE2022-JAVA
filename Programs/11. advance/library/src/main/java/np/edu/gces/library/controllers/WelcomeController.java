@@ -30,7 +30,7 @@ public class WelcomeController {
     @GetMapping("/getBooks")
     public Book getBook() {
         System.out.println(config.getTheme());
-        Book b = new Book(1,"Dilip Shrestha", 100, null);
+        Book b = new Book(1,"Dilip Shrestha", 100, null,"col1");
         return b;
     }
 
