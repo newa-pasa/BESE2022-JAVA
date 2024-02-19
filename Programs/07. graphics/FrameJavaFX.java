@@ -3,6 +3,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class FrameJavaFX extends Application {
@@ -31,7 +32,7 @@ public class FrameJavaFX extends Application {
             System.out.println("Name: " + name + ", Gender: " + gender);
         });
 
-        VBox layout = new VBox(10);
+        HBox layout = new HBox(10);
         layout.setPadding(new Insets(10));
         layout.getChildren().addAll(label, textField, maleRadioButton, femaleRadioButton, submitButton);
 
