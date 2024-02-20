@@ -28,5 +28,4 @@ public class Book{
 
     private int pages;
     private Date publishDate;
-    private String col1;
 }

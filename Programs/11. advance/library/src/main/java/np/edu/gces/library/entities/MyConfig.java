@@ -1,15 +1,24 @@
 package np.edu.gces.library.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+
+//@Entity, @RestController, @service
 public class MyConfig {
     private int appVersion;
     private String theme;
+
+
+    static MyConfig config= new MyConfig();
+
+    public MyConfig(){
+
+    }
+
+    public static MyConfig getConfig(){
+        return config;
+    }
 }
