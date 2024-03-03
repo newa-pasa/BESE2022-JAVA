@@ -1,7 +1,6 @@
 
 Concurrency vs Parallel
 
-
 Concurrency in Java refers to the ability of a program to execute multiple tasks simultaneously. It is a crucial aspect of modern software development, enabling developers to create efficient and responsive applications. Java provides built-in support for concurrency through its multithreading features. Here are key concepts related to concurrency in Java:
 
 ### 1. **Thread:**
